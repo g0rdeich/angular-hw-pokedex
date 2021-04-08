@@ -1,0 +1,7 @@
+<div class="header">
+  <p class>POKEDEX</p>
+  <div class="header__buttons">
+    <button (click)="setLines()" [disabled]="lineType" class="btn header__btn">lines</button>
+    <button (click)="setCards()" [disabled]="!lineType" class="btn header__btn">cards</button>
+  </div>
+</div>

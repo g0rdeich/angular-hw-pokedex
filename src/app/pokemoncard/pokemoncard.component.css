@@ -1,0 +1,40 @@
+.pokemon-card,
+.pokemon-card--line {
+  margin: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: forestgreen;
+  border: 3px solid green;
+}
+
+.pokemon-card {
+  width: 300px;
+  height: 300px;
+  flex-direction: column;
+}
+
+.pokemon-card--line {
+  width: 90vw;
+  height: 50px;
+}
+
+.pokemon-card__info {
+  display: flex;
+  align-items: center;
+}
+
+.pokemon-card__info p {
+  margin: 5px;
+}
+
+.pokemon-card .pokemon-card__info {
+  flex-direction: column;
+}
+
+.pokemon-card__img {
+  width: 100px;
+  height: 100px;
+}
+
+

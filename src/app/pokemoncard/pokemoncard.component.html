@@ -1,0 +1,13 @@
+<div [ngClass]="{'pokemon-card': !lineType, 'pokemon-card--line': lineType}" appBigDamage [damage]="pokemonCard.damage">
+  <div class="pokemon-card__info">
+    <p>ID:{{pokemonCard.id}}</p>
+    <p>Name:{{pokemonCard.name}}</p>
+    <p>Damage:{{pokemonCard.damage}}</p>
+  </div>
+  <img *ngIf="lineType===false" src="../../assets/images/{{pokemonCard.id}}.png" class="pokemon-card__img">
+  <button *ngIf="pokemonCard.captured===false; else release"
+  (click)="pokemonCard.captured=!pokemonCard.captured" class="btn card__btn">catch</button>
+  <ng-template #release>
+    <button (click)="pokemonCard.captured=!pokemonCard.captured" class="btn card__btn">release</button>
+  </ng-template>
+</div>
